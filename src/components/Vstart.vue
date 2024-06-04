@@ -38,6 +38,22 @@
 
     <!-- 3번째 screen -->
       <img src="../assets/thScreen.svg" :class="$style.thScreen"/>
+      <div :class="$style.thContainer">
+        <p :class="$style.thTitle">상벌점 화면</p>
+        <p :class="$style.thCategory">#한눈에  #알기 쉽게  #간편하게</p>
+        <p :class="$style.thContent">상벌점을 받은 날짜, 점수, 총점 등<br/> 다양한 정보를 한 눈에 볼 수 있다.</p>
+      </div>
+
+
+      <!-- 4번째 scree -->
+      <img src="../assets/foPhone.svg" :class="$style.foScreen"/>
+      <hr :class="$style.horizontalLine"/>
+      <div :class="$style.foContainer">
+        <p :class="$style.foTitle">#게시판으로 소통</p>
+        <p :class="$style.foContent">커뮤니티를 사용하여 기숙사 생들끼리<br/> 소통하며, 사감 선생님의 공지사항을<br/> 한눈에 볼 수 있습니다.</p>
+      </div>
+
+      <!-- 5번째 screem -->
   </div>
 </template>
 
@@ -144,15 +160,19 @@ body{
   padding-top: 20vh;
 }
 
-.thScreen {
+.thScreen{
   position: absolute; 
   margin-top: 210vh;
   width: 100vw;
 }
 
-.secContainer{
+.secContainer,
+.thContainer,
+.foScreen,
+.foContainer {
   position: absolute;
 }
+
 
 .wrapCommunityContent{
   margin-top: 100vh;
@@ -184,5 +204,49 @@ body{
   font-size: 20px;
   line-height: 2.8vh;
   margin-top: 4vh;
+}
+
+.thContainer,
+.foScreen{
+  margin-top: 231vh;
+  margin-left: 12vw;
+}
+
+.thTitle,
+.foTitle{
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.thCategory{
+  font-size: 25px;
+}
+
+.thContent{
+  font-size: 20px;
+}
+
+.foScreen{
+  margin-top: 330vh;
+  margin-left: 60vw;
+  height: 80vh;
+}
+.horizontalLine {
+  width: 30%;
+  border: 1px solid #FFC61B;
+  position: absolute;
+  margin-top: 355vh;
+}
+
+.foTitle{
+  color: #000;
+  margin-top: 357vh;
+  margin-left: 16vw;
+  color: #FFC61B;
+}
+
+.foContent{
+  font-size: 21px;
+  text-align: right;
 }
 </style>
