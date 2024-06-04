@@ -11,15 +11,43 @@
       <p :class="$style.p3">기숙사의 불편한 점들을 개선한 기숙사 소통 커뮤니티앱</p>
     </div>
     <img src="../assets/mainPhone.svg" :class="$style.mainPhone"/>
+    <div :class="$style.wrapTeamContent">
+      <p :class="$style.teamName">BackEnd 임효진</p>
+      <p :class="$style.teamName">FrontEnd 박화경</p>  
+      <p :class="$style.lag">React, MySQL,Spring boot3</p>
+    </div>
+
+    <!-- 2번째 screen -->
+    <img src="../assets/showPhone.svg" :class="$style.showPhone"/>
+    <div :class="$style.secContainer">
+      <img src="../assets/logo.svg" :class="$style.secLogo"/>
+
+      <div :class="$style.wrapCommunityContent">
+        <p :class="$style.scTitle">기숙사 커뮤니티</p>
+        <p :class="$style.scName">마이도미토리</p>
+        <p :class="$style.scContent">Re design story</p>
+        <p :class="$style.scContent1">마이 도미토리는 2년간 기숙사 생활을 해본 경험으로 <br/>
+          기숙사 정보 제공, 소통의 어려움에 대한 문제가 많았습니다.<br/>
+          특히나 <span :class="$style.point">기숙사를 처음 사용하는 신입생들은 기숙사 규칙,일과등에 대해 미숙하여<br/>
+          적응 하는 데에 어려움</span>을 겪는 모습들을 봐왔습니다.<br/><br/>
+          따라서, 기숙사를에서 <span :class="$style.point">처음 생활해보는 누구든지 쉽게</span>,더 빨리 기숙사 생활에 적응 하고<br/>
+          편안하게 소통할 수 있도록 마이도미토리를 기획했습니다<br/>
+        </p>
+      </div>
+    </div>
+
+    <!-- 3번째 screen -->
+      <img src="../assets/thScreen.svg" :class="$style.thScreen"/>
   </div>
 </template>
 
 
-<style module>
+<style module>  
 body{
   margin: 0;
   padding: 0;
   background-color: #F5F5F5;
+  overflow-x: hidden;
 }
 
 .container{
@@ -43,21 +71,29 @@ body{
 
 .p1,
 .p2,
-.p3{
+.p3,
+.teamName,
+.scTitle,
+.scName{
   color: #fff;
   margin: 0;
 }
 
 .p1,
-.p3{
-  font-size: 25px;
+.p3,
+.scTitle,
+.scName{
+  font-size: 27px;
 }
 
-.p1{
+.p1,
+.scTitle{
   margin-top: 1.2vh;
 }
-.p2{
+.p2,
+.scName{
   font-size: 40px;
+  width: 13vw;
   font-weight: bold;
 }
 
@@ -75,5 +111,78 @@ body{
 
 .mainPhone{
   margin-left: 40vh;
+}
+
+.wrapTeamContent{
+  position: absolute;
+  bottom: -30vh;
+  margin: 1vh;
+}
+
+.teamName,
+.lag{
+  color: #000;
+  font-size: 18px;
+}
+
+.showPhone,
+.secLogo{
+  position: absolute;
+  margin-top: 100vh;
+}
+
+.showPhone{
+  height: 57vw;
+  margin-left: 50vw;
+
+}
+
+.secLogo,
+.wrapCommunityContent{
+  left: 0;
+  padding: 6vw;
+  padding-top: 20vh;
+}
+
+.thScreen {
+  position: absolute; 
+  margin-top: 210vh;
+  width: 100vw;
+}
+
+.secContainer{
+  position: absolute;
+}
+
+.wrapCommunityContent{
+  margin-top: 100vh;
+  margin-left: 6vw;
+}
+
+.scName,
+.scTitle,
+.scContent,
+.point{
+  color: #FFC61B;
+  font-weight: 700;
+}
+
+.point{
+  font-weight: bold;
+}
+.scContent,
+.scContent1{
+  margin-left: -5.5vw;
+}
+.scContent{
+  font-size: 25px;
+  margin-top: 11vh;
+}
+
+.scContent1{
+  color:   rgba(0, 0, 0, 0.57);
+  font-size: 20px;
+  line-height: 2.8vh;
+  margin-top: 4vh;
 }
 </style>
