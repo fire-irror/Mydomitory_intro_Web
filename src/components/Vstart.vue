@@ -81,6 +81,18 @@ body{
   background-color: #F5F5F5;
   overflow-x: hidden;
 }
+::-webkit-scrollbar {
+  width: 0.6vw; 
+}
+
+::-webkit-scrollbar-track {
+  background: #F5F5F5; 
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #FFD700;
+  border-radius: 10px; 
+}
 
 .container{
   position: relative;
@@ -319,14 +331,12 @@ body{
 }
 
 .sixScreen{
-  margin-top: 540vh;
   width: 100vw;
-  height: 100vh;
+  margin-top: 540vh;
+  height: 108vh;
 }
 
 .wrapSixScreen{
-  position: relative;
-  right: 20vw;
   margin-top: 540vh;
 }
 
@@ -336,6 +346,7 @@ body{
   color: #FFC61B;
   font-size: 50px;
   font-weight: bold;
+  margin-left: -22vw;
 }
 .sixP2{
   width: 18vw;
@@ -343,11 +354,11 @@ body{
   text-align: right;
   color: #000;
   font-weight: 300;
-  margin-left: 10.5vw;
+  margin-left: -17vw;
 }
 
 .endScreen{
-  margin-top:640vh;
+  margin-top:647vh;
   width: 100vw;
   height: 100vh;
 }
