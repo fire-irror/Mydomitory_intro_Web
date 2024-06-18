@@ -26,13 +26,7 @@
         <p :class="$style.scTitle">기숙사 커뮤니티</p>
         <p :class="$style.scName">마이도미토리</p>
         <p :class="$style.scContent">Re design story</p>
-        <p :class="$style.scContent1">마이 도미토리는 2년간 기숙사 생활을 해본 경험으로 <br/>
-          기숙사 정보 제공, 소통의 어려움에 대한 문제가 많았습니다.<br/>
-          특히나 <span :class="$style.point">기숙사를 처음 사용하는 신입생들은 기숙사 규칙,일과등에 대해 미숙하여<br/>
-          적응 하는 데에 어려움</span>을 겪는 모습들을 봐왔습니다.<br/><br/>
-          따라서, 기숙사를에서 <span :class="$style.point">처음 생활해보는 누구든지 쉽게</span>,더 빨리 기숙사 생활에 적응 하고<br/>
-          편안하게 소통할 수 있도록 마이도미토리를 기획했습니다<br/>
-        </p>
+        <img src="../assets/secScreenContent.svg" :class="$style.scContent1"/>
       </div>
     </div>
 
@@ -54,6 +48,28 @@
       </div>
 
       <!-- 5번째 screem -->
+      <img src="../assets/fifScreen.svg" :class="$style.fifScreen"/>
+      <div :class="$style.fifContainer">
+        <p :class="$style.fifTitle">세탁일지</p>
+        <p :class="$style.fifTitle2">작성방법</p>
+        <p :class="$style.fifCategory">#3단계_끝!</p>
+        <p :class="$style.one">1. 세탁 가능한 시간 및  세탁기 확인 후 선택</p>
+        <p :class="$style.one1">세탁 시간 및 세탁기 신청 현황을 확인</p>
+        <p :class="$style.two">2. 세탁일지 작성 완료</p>
+        <p :class="$style.two2">비어있는 세탁일지 칸을 선택하고<br/> 신청하면 신청 완료</p>
+        <p :class="$style.three">3. 신청한 시간에 맞춰 세탁 진행</p>
+        <p :class="$style.three3">신청한 시간에 맞춰 세탁기를 이용하면 끝</p>
+      </div>
+
+      <!-- 6번째 screen -->
+      <img src="../assets/sixScreen.svg" :class="$style.sixScreen"/>
+      <div :class="$style.wrapSixScreen">
+        <p :class="$style.sixP1"># 기숙사 일정들 간편하게</p>
+        <p :class="$style.sixP2">위클리와 먼슬리 캘린더로 기숙사의 특별한 일정들을 한눈에 확인 할 수 있습니다</p>
+      </div>
+
+      <!-- 마지막 화면 -->
+      <img src="../assets/endScreen.svg" :class="$style.endScreen"/>
   </div>
 </template>
 
@@ -169,7 +185,11 @@ body{
 .secContainer,
 .thContainer,
 .foScreen,
-.foContainer {
+.foContainer,
+.fifScreen,
+.fifContainer,
+.sixScreen,
+.endScreen {
   position: absolute;
 }
 
@@ -182,7 +202,10 @@ body{
 .scName,
 .scTitle,
 .scContent,
-.point{
+.point,
+.one,
+.two,
+.three{
   color: #FFC61B;
   font-weight: 700;
 }
@@ -249,4 +272,84 @@ body{
   font-size: 21px;
   text-align: right;
 }
+
+.fifScreen,
+.fifContainer{
+  margin-top: 405vh;
+  width: 100vw;
+}
+
+.fifContainer{
+  text-align: right;
+  right: 3vh;
+  margin-top: 438vh;
+}
+
+.fifTitle,
+.fifTitle2,
+.fifCategory{
+  font-size: 50px;
+  margin: 0;
+  font-weight: bold;
+  color: #FFC61B;
+}
+
+.fifTitle{
+  color:#fff;
+}
+
+.fifCategory{
+  font-size: 40px;
+  margin-top: 4vh;
+  margin-bottom: 7vh;
+}
+
+.one,
+.two,
+.three{
+  font-size: 20px;
+}
+
+.one1,
+.two2,
+.three3{
+  margin-bottom: 3.5vh;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.sixScreen{
+  margin-top: 540vh;
+  width: 100vw;
+  height: 100vh;
+}
+
+.wrapSixScreen{
+  position: relative;
+  right: 20vw;
+  margin-top: 540vh;
+}
+
+.sixP1,
+.sixP2{
+  width: 40vw;
+  color: #FFC61B;
+  font-size: 50px;
+  font-weight: bold;
+}
+.sixP2{
+  width: 18vw;
+  font-size: 30px;
+  text-align: right;
+  color: #000;
+  font-weight: 300;
+  margin-left: 10.5vw;
+}
+
+.endScreen{
+  margin-top:640vh;
+  width: 100vw;
+  height: 100vh;
+}
+
 </style>
