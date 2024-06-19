@@ -104,7 +104,7 @@ body{
 .logo{
   width: 6.46vw;
   height: 11.48vh;
-  margin-top: 11vh;
+  margin-top: 13vh;
   margin-left: 8.5vw;
 }
 
@@ -134,10 +134,15 @@ body{
 .scTitle{
   margin-top: 1.2vh;
 }
+
+.scTitle,
+.scName{
+  margin-left: 2.5vw;
+}
 .p2,
 .scName{
   font-size: 40px;
-  width: 13vw;
+  width: 17.5vw;
   font-weight: bold;
 }
 
@@ -346,15 +351,15 @@ body{
   color: #FFC61B;
   font-size: 50px;
   font-weight: bold;
-  margin-left: -22vw;
+  margin-left: -36vw;
 }
 .sixP2{
   width: 18vw;
-  font-size: 30px;
+  font-size: 28px;
   text-align: right;
   color: #000;
   font-weight: 300;
-  margin-left: -17vw;
+  margin-left: -24vw;
 }
 
 .endScreen{
